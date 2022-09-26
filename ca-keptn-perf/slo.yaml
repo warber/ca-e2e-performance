@@ -25,6 +25,24 @@ objectives:
       - criteria:
           - "<=100"     
     weight: 1
+      - sli: "response_time_client_shippy"
+    key_sli: false
+    pass:
+      - criteria:
+          - "<=200"
+    weight: 1
+  - sli: "error_rate_client_shippy"
+    key_sli: false
+    pass:             
+      - criteria:
+          - "<=1"   
+    weight: 1
+  - sli: "cpu_mcores_shippy"
+    key_sli: false
+    pass:
+      - criteria:
+          - "<=100"     
+    weight: 1
 total_score:
   pass: "90%"
   warning: "75%"
