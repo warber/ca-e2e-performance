@@ -25,7 +25,7 @@ objectives:
       - criteria:
           - "<=100"     
     weight: 1
-      - sli: "response_time_client_shippy"
+  - sli: "response_time_client_shippy"
     key_sli: false
     pass:
       - criteria:
