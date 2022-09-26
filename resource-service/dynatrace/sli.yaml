@@ -1,0 +1,6 @@
+spec_version: "1.0"
+indicators:
+  response_time_server_side: builtin:service.response.server:filter(in("dt.entity.service",entitySelector("type(SERVICE) AND fromRelationships.IS_SERVICE_OF(type(CLOUD_APPLICATION),entityId(CLOUD_APPLICATION-2874E8FF2B398FE8))"))):splitBy("dt.entity.service"):median
+  error_rate_server_side: builtin:service.errors.server.rate:filter(in("dt.entity.service",entitySelector("type(SERVICE) AND fromRelationships.IS_SERVICE_OF(type(CLOUD_APPLICATION),entityId(CLOUD_APPLICATION-2874E8FF2B398FE8))"))):splitBy("dt.entity.service"):avg
+  throughput_server_side: builtin:service.requestCount.server:filter(in("dt.entity.service",entitySelector("type(SERVICE) AND fromRelationships.IS_SERVICE_OF(type(CLOUD_APPLICATION),entityId(CLOUD_APPLICATION-2874E8FF2B398FE8))"))):value:rate(1m):splitBy("dt.entity.service")
+  cpu_mcores: builtin:containers.cpu.usageMilliCores:filter(in("dt.entity.container_group_instance",entitySelector("type(CONTAINER_GROUP_INSTANCE),fromRelationships.IS_CGI_OF_CA(type(CLOUD_APPLICATION),type(CLOUD_APPLICATION),entityId(CLOUD_APPLICATION-2874E8FF2B398FE8))"))):parents:parents:splitBy("dt.entity.cloud_application"):avg
