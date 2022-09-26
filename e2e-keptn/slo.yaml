@@ -1,0 +1,255 @@
+spec_version: ""
+filter: {}
+comparison:
+    compare_with: single_result
+    include_result_with_score: pass
+    number_of_comparison_results: 1
+    aggregate_function: avg
+objectives:
+    - sli: response_time_(server_side)
+      displayName: Response time (server side)
+      pass: []
+      warning: []
+      weight: 1
+      key_sli: false
+    - sli: failure_rate_(server_side)
+      displayName: Failure rate (server side)
+      pass: []
+      warning: []
+      weight: 1
+      key_sli: false
+    - sli: throughput_(server_side)
+      displayName: Throughput (server side)
+      pass: []
+      warning: []
+      weight: 1
+      key_sli: false
+    - sli: response_time_(server_side)
+      displayName: Response time (server side)
+      pass: []
+      warning: []
+      weight: 1
+      key_sli: false
+    - sli: failure_rate_(server_side)
+      displayName: Failure rate (server side)
+      pass: []
+      warning: []
+      weight: 1
+      key_sli: false
+    - sli: throughput_(server_side)
+      displayName: Throughput (server side)
+      pass: []
+      warning: []
+      weight: 1
+      key_sli: false
+    - sli: response_time_(server_side)
+      displayName: Response time (server side)
+      pass:
+        - criteria:
+            - <=200
+      warning:
+        - criteria:
+            - <=300
+      weight: 1
+      key_sli: false
+    - sli: failure_rate_(server_side)
+      displayName: Failure rate (server side)
+      pass: []
+      warning: []
+      weight: 1
+      key_sli: false
+    - sli: throughput_(server_side)
+      displayName: Throughput (server side)
+      pass: []
+      warning: []
+      weight: 1
+      key_sli: false
+    - sli: response_time_(server_side)
+      displayName: Response time (server side)
+      pass: []
+      warning: []
+      weight: 1
+      key_sli: false
+    - sli: failure_rate_(server_side)
+      displayName: Failure rate (server side)
+      pass: []
+      warning: []
+      weight: 1
+      key_sli: false
+    - sli: throughput_(server_side)
+      displayName: Throughput (server side)
+      pass: []
+      warning: []
+      weight: 1
+      key_sli: false
+    - sli: response_time_(server_side)
+      displayName: Response time (server side)
+      pass: []
+      warning: []
+      weight: 1
+      key_sli: false
+    - sli: failure_rate_(server_side)
+      displayName: Failure rate (server side)
+      pass: []
+      warning: []
+      weight: 1
+      key_sli: false
+    - sli: throughput_(server_side)
+      displayName: Throughput (server side)
+      pass: []
+      warning: []
+      weight: 1
+      key_sli: false
+    - sli: response_time_(server_side)
+      displayName: Response time (server side)
+      pass: []
+      warning: []
+      weight: 1
+      key_sli: false
+    - sli: failure_rate_(server_side)
+      displayName: Failure rate (server side)
+      pass: []
+      warning: []
+      weight: 1
+      key_sli: false
+    - sli: throughput_(server_side)
+      displayName: Throughput (server side)
+      pass: []
+      warning: []
+      weight: 1
+      key_sli: false
+    - sli: cpu_usage,_requests_and_limits
+      displayName: CPU usage, requests and limits
+      pass: []
+      warning: []
+      weight: 1
+      key_sli: false
+    - sli: memory_usage,_requests_and_limits
+      displayName: Memory usage, requests and limits
+      pass: []
+      warning: []
+      weight: 1
+      key_sli: false
+    - sli: cpu_usage,_requests_and_limits
+      displayName: CPU usage, requests and limits
+      pass: []
+      warning: []
+      weight: 1
+      key_sli: false
+    - sli: memory_usage,_requests_and_limits
+      displayName: Memory usage, requests and limits
+      pass: []
+      warning: []
+      weight: 1
+      key_sli: false
+    - sli: cpu
+      displayName: CPU
+      pass: []
+      warning: []
+      weight: 1
+      key_sli: false
+    - sli: memory
+      displayName: Memory
+      pass: []
+      warning: []
+      weight: 1
+      key_sli: false
+    - sli: cpu
+      displayName: CPU
+      pass: []
+      warning: []
+      weight: 1
+      key_sli: false
+    - sli: memory
+      displayName: Memory
+      pass: []
+      warning: []
+      weight: 1
+      key_sli: false
+    - sli: cpu
+      displayName: CPU
+      pass: []
+      warning: []
+      weight: 1
+      key_sli: false
+    - sli: memory
+      displayName: Memory
+      pass: []
+      warning: []
+      weight: 1
+      key_sli: false
+    - sli: cpu
+      displayName: CPU
+      pass: []
+      warning: []
+      weight: 1
+      key_sli: false
+    - sli: memory
+      displayName: Memory
+      pass: []
+      warning: []
+      weight: 1
+      key_sli: false
+    - sli: cpu
+      displayName: CPU
+      pass: []
+      warning: []
+      weight: 1
+      key_sli: false
+    - sli: memory
+      displayName: Memory
+      pass: []
+      warning: []
+      weight: 1
+      key_sli: false
+    - sli: cpu
+      displayName: CPU
+      pass: []
+      warning: []
+      weight: 1
+      key_sli: false
+    - sli: memory
+      displayName: Memory
+      pass: []
+      warning: []
+      weight: 1
+      key_sli: false
+    - sli: response_time_(client_side)
+      displayName: Response time (client side)
+      pass: []
+      warning: []
+      weight: 1
+      key_sli: false
+    - sli: failure_rate_(client_side)
+      displayName: Failure rate (client side)
+      pass: []
+      warning: []
+      weight: 1
+      key_sli: false
+    - sli: throughput_(client_side)
+      displayName: Throughput (client side)
+      pass: []
+      warning: []
+      weight: 1
+      key_sli: false
+    - sli: response_time_(client_side)
+      displayName: Response time (client side)
+      pass: []
+      warning: []
+      weight: 1
+      key_sli: false
+    - sli: failure_rate_(client_side)
+      displayName: Failure rate (client side)
+      pass: []
+      warning: []
+      weight: 1
+      key_sli: false
+    - sli: throughput_(client_side)
+      displayName: Throughput (client side)
+      pass: []
+      warning: []
+      weight: 1
+      key_sli: false
+total_score:
+    pass: 90%
+    warning: 75%
