@@ -19,24 +19,18 @@ objectives:
       - criteria:
           - "<=1"   
     weight: 1
-  - sli: "cpu_mcores_resource_svc"
-    key_sli: false
-    pass:
-      - criteria:
-          - "<=100"
-    weight: 1   
   - sli: "response_time_client_shippy"
     key_sli: false
     pass:
       - criteria:
           - "<=200"
     weight: 1
-  - sli: "cpu_mcores_shippy"
+  - sli: "error_rate_client_shippy"
     key_sli: false
-    pass:
+    pass:             
       - criteria:
-          - "<=100"          
-    weight: 1
+          - "<=1"   
+    weight: 1    
   - sli: "response_time_client_ca_svc"
     key_sli: false
     pass:
@@ -49,12 +43,6 @@ objectives:
       - criteria:
           - "<=1"   
     weight: 1
-  - sli: "cpu_mcores_ca_svc"
-    key_sli: false
-    pass:
-      - criteria:
-          - "<=100"     
-    weight: 1    
   - sli: "response_time_svr_dt_svc"
     key_sli: false
     pass:
@@ -66,13 +54,7 @@ objectives:
     pass:             
       - criteria:
           - "<=1"   
-    weight: 1
-  - sli: "cpu_mcores_dt_svc"
-    key_sli: false
-    pass:
-      - criteria:
-          - "<=100"     
-    weight: 1    
+    weight: 1 
   - sli: "response_time_svr_lighthouse_svc"
     key_sli: false
     pass:
@@ -84,13 +66,7 @@ objectives:
     pass:             
       - criteria:
           - "<=1"   
-    weight: 1
-  - sli: "cpu_mcores_lighthouse_svc"
-    key_sli: false
-    pass:
-      - criteria:
-          - "<=100"     
-    weight: 1     
+    weight: 1 
   - sli: "response_time_svr_mongo_datastore"
     key_sli: false
     pass:
@@ -102,13 +78,7 @@ objectives:
     pass:             
       - criteria:
           - "<=1"   
-    weight: 1
-  - sli: "cpu_mcores_mongo_datastore"
-    key_sli: false
-    pass:
-      - criteria:
-          - "<=100"     
-    weight: 1      
+    weight: 1    
   - sli: "response_time_svr_api_nginx"
     key_sli: false
     pass:
@@ -120,13 +90,7 @@ objectives:
     pass:             
       - criteria:
           - "<=1"   
-    weight: 1
-  - sli: "cpu_mcores_api_nginx"
-    key_sli: false
-    pass:
-      - criteria:
-          - "<=100"     
-    weight: 1    
+    weight: 1  
 total_score:
   pass: "90%"
   warning: "75%"
