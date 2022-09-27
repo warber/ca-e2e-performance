@@ -168,13 +168,7 @@ objectives:
     pass:
       - criteria:
           - "<=100"     
-    weight: 1
-  - sli: "memory_mib_api_ngnix"
-    key_sli: false
-    pass:
-      - criteria:
-          - "<=100"
-    weight: 1        
+    weight: 1    
 total_score:
   pass: "90%"
   warning: "75%"
