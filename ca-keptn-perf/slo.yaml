@@ -11,7 +11,10 @@ objectives:
     key_sli: false
     pass:
       - criteria:
-          - "<=200"
+          - "<100"
+    warning:      
+      - criteria:
+          - "<200"
     weight: 1
   - sli: "error_rate_svr_resource_svc"
     key_sli: false
@@ -23,7 +26,10 @@ objectives:
     key_sli: false
     pass:
       - criteria:
-          - "<=200"
+          - "<100"
+    warning:      
+      - criteria:
+          - "<200"
     weight: 1
   - sli: "error_rate_client_shippy"
     key_sli: false
@@ -35,7 +41,10 @@ objectives:
     key_sli: false
     pass:
       - criteria:
-          - "<=200"
+          - "<100"
+    warning:      
+      - criteria:
+          - "<200"
     weight: 1
   - sli: "error_rate_client_ca_svc"
     key_sli: false
@@ -47,7 +56,10 @@ objectives:
     key_sli: false
     pass:
       - criteria:
-          - "<=200"
+          - "<100"
+    warning:      
+      - criteria:
+          - "<200"
     weight: 1
   - sli: "error_rate_svr_dt_svc"
     key_sli: false
@@ -59,7 +71,10 @@ objectives:
     key_sli: false
     pass:
       - criteria:
-          - "<=200"
+          - "<100"
+    warning:      
+      - criteria:
+          - "<200"
     weight: 1
   - sli: "error_rate_svr_lighthouse_svc"
     key_sli: false
@@ -83,7 +98,10 @@ objectives:
     key_sli: false
     pass:
       - criteria:
-          - "<=200"
+          - "<100"
+    warning:      
+      - criteria:
+          - "<200"
     weight: 1
   - sli: "error_rate_svr_api_nginx"
     key_sli: false
