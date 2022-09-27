@@ -42,13 +42,7 @@ objectives:
     pass:
       - criteria:
           - "<=100"          
-    weight: 1
-  - sli: "memory_mib_shippy"
-    key_sli: false
-    pass:
-      - criteria:
-          - "<=100"
-    weight: 1     
+    weight: 1  
   - sli: "response_time_client_ca_svc"
     key_sli: false
     pass:
