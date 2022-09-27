@@ -72,13 +72,7 @@ objectives:
     pass:
       - criteria:
           - "<=100"     
-    weight: 1
-  - sli: "memory_mib_ca-svc"
-    key_sli: false
-    pass:
-      - criteria:
-          - "<=100"
-    weight: 1        
+    weight: 1    
   - sli: "response_time_svr_dt_svc"
     key_sli: false
     pass:
@@ -96,13 +90,7 @@ objectives:
     pass:
       - criteria:
           - "<=100"     
-    weight: 1
-  - sli: "memory_mib_dt_svc"
-    key_sli: false
-    pass:
-      - criteria:
-          - "<=100"
-    weight: 1        
+    weight: 1    
   - sli: "response_time_svr_lighthouse_svc"
     key_sli: false
     pass:
@@ -120,13 +108,7 @@ objectives:
     pass:
       - criteria:
           - "<=100"     
-    weight: 1
-  - sli: "memory_mib_lighthouse_svc"
-    key_sli: false
-    pass:
-      - criteria:
-          - "<=100"
-    weight: 1        
+    weight: 1     
   - sli: "response_time_svr_mongo_datastore"
     key_sli: false
     pass:
@@ -144,13 +126,7 @@ objectives:
     pass:
       - criteria:
           - "<=100"     
-    weight: 1
-  - sli: "memory_mib_mongo_datastore"
-    key_sli: false
-    pass:
-      - criteria:
-          - "<=100"
-    weight: 1        
+    weight: 1      
   - sli: "response_time_svr_api_nginx"
     key_sli: false
     pass:
