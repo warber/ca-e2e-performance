@@ -23,7 +23,12 @@ objectives:
     key_sli: false
     pass:
       - criteria:
-          - "<=100"     
+          - "<=100"
+  - sli: "memory_mib_resource_svc"
+    key_sli: false
+    pass:
+      - criteria:
+          - "<=100"            
     weight: 1
   - sli: "response_time_client_shippy"
     key_sli: false
@@ -41,8 +46,128 @@ objectives:
     key_sli: false
     pass:
       - criteria:
+          - "<=100"          
+    weight: 1
+  - sli: "memory_mib_shippy"
+    key_sli: false
+    pass:
+      - criteria:
+          - "<=100"       
+  - sli: "response_time_client_ca_svc"
+    key_sli: false
+    pass:
+      - criteria:
+          - "<=200"
+    weight: 1
+  - sli: "error_rate_client_ca_svc"
+    key_sli: false
+    pass:             
+      - criteria:
+          - "<=1"   
+    weight: 1
+  - sli: "cpu_mcores_ca_svc"
+    key_sli: false
+    pass:
+      - criteria:
           - "<=100"     
     weight: 1
+  - sli: "memory_mib_ca_svc"
+    key_sli: false
+    pass:
+      - criteria:
+          - "<=100"       
+  - sli: "response_time_client_dt_svc"
+    key_sli: false
+    pass:
+      - criteria:
+          - "<=200"
+    weight: 1
+  - sli: "error_rate_client_dt_svc"
+    key_sli: false
+    pass:             
+      - criteria:
+          - "<=1"   
+    weight: 1
+  - sli: "cpu_mcores_dt_svc"
+    key_sli: false
+    pass:
+      - criteria:
+          - "<=100"     
+    weight: 1
+  - sli: "memory_mib_dt_svc"
+    key_sli: false
+    pass:
+      - criteria:
+          - "<=100"       
+  - sli: "response_time_svr_lighthouse_svc"
+    key_sli: false
+    pass:
+      - criteria:
+          - "<=200"
+    weight: 1
+  - sli: "error_rate_svr_lighthouse_svc"
+    key_sli: false
+    pass:             
+      - criteria:
+          - "<=1"   
+    weight: 1
+  - sli: "cpu_mcores_lighthouse_svc"
+    key_sli: false
+    pass:
+      - criteria:
+          - "<=100"     
+    weight: 1
+  - sli: "memory_mib_lighthouse_svc"
+    key_sli: false
+    pass:
+      - criteria:
+          - "<=100"       
+  - sli: "response_time_svr_mongo_datastore"
+    key_sli: false
+    pass:
+      - criteria:
+          - "<=200"
+    weight: 1
+  - sli: "error_rate_svr_mongo_datastore"
+    key_sli: false
+    pass:             
+      - criteria:
+          - "<=1"   
+    weight: 1
+  - sli: "cpu_mcores_mongo_datastore"
+    key_sli: false
+    pass:
+      - criteria:
+          - "<=100"     
+    weight: 1
+  - sli: "memory_mib_mongo_datastore"
+    key_sli: false
+    pass:
+      - criteria:
+          - "<=100"       
+  - sli: "response_time_svr_api_nginx"
+    key_sli: false
+    pass:
+      - criteria:
+          - "<=200"
+    weight: 1
+  - sli: "error_rate_svr_api_nginx"
+    key_sli: false
+    pass:             
+      - criteria:
+          - "<=1"   
+    weight: 1
+  - sli: "cpu_mcores_api_nginx"
+    key_sli: false
+    pass:
+      - criteria:
+          - "<=100"     
+    weight: 1
+  - sli: "memory_mib_api_nginx"
+    key_sli: false
+    pass:
+      - criteria:
+          - "<=100"       
 total_score:
   pass: "90%"
   warning: "75%"
